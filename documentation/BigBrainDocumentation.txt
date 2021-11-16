@@ -1,0 +1,72 @@
+﻿Kalen Oyphanith 
+ISTE 456: Mobile Application Development II
+Final Project: Big Brain Documentation
+
+
+Product Definition Statement:
+
+
+Big Brain is an application that will allow its users to create their own flashcards to help them study for any class, test, etc. They can edit and delete their existing flashcards if they are no longer needed or a mistake is made. A time aspect will be implemented, like a timer, to keep the studying pace going.
+
+
+The targeted audience would mainly be students in high school or college.
+
+
+They can set an amount of time for how long they want to study. At the end there is an audio clip that lets them know time is up and a Toast that says they are done studying.
+
+
+Features implemented:
+You can set a timer (seekbar) that displays how long you have to study for (max: 1 hour). The user can press play whenever they want to start and will see the time on all screens. They can press the restart button to restart the timer or to change the time. When the timer is up, a sparkling audio clip is played and a toast at the bottom of the screen tells the user that they are done studying.
+
+
+On the front screen there is a star animation just to make the home screen look brighter and more interactive.
+
+
+The create button jumps to a different screen where the user is able to create the flash card. They can type in the term and definition (multiline). The user must have both inputs in for the term or definition or they get a warning before creating the flashcard. After they press save, their term is saved.
+
+
+The user can also edit their preexisting flashcards if they’d like to change it. The save button saves the edit, creates a new one, and refreshes the old ones while deleting the previously edited one.
+The user also has the ability to delete a specific flash card if it is no longer needed and goes through validation before doing so because it cannot come back.
+
+
+Wishlist of features to put in the next version:
+I wish I was able to implement more animations during intervals of the timer that would show words of encouragement and cute images. I would also like to have different sets of flashcards for different categories/classes so the user can separate their flashcards. In addition, making the outputs look more like flash cards instead of something like quizlet is a feature I’d like to add (then a card flip animation).
+
+
+Self- Evaluation and documentation
+
+
+* Grade yourself and justify it. Point out where you did A-level work. Refer to “what does an A project look like”
+   * I don’t think this project was close to perfect but I am proud of what I was able to do and I love the aesthetic. It could definitely be better and have more features because it lacks a lot of my initial ideas. So I give this app an 85. It is properly scoped and every text element is in my strings file. The layout is nice and spaced out. There is a simple animation on the front page. The terms and definitions are also saved so the user can come back and see their old entries. The user also doesn’t have to wait that long and is given instant feedback.
+* Describe what each class does and how the pieces fit together.
+   * There is a MainFragment that shows the initial display of the app and tells the user they can set a timer. There is also a little animation of a star to make the reader read the information around it. There is also a “create +” button connects the main fragment to another fragment called FragmentOne
+   * For FragmentOne, this is where essentially everything happens. The term and definition are stored in SharedPreferences. 
+   * Functions: refreshButtons: recreates terms, definitions, and buttons, make: adds a new word to the saved file then refreshes all buttons, makeGUI: adds a new row and corresponding edit/delete buttons, clearButtons: deletes all the terms and definitions, clearButton: deletes one row of terms and definitions, handleSaveButtonClick: allows edits to save or a new term/definition to be added, handleClearButtonClick: validates that the user wants to delete a term/definition, handleEditButtonClicked: allows the user to change the term/definition.
+   * On the MainActivity, we have the seekbar timer and the nav controller to let the fragments switch.
+* Document your “above and beyond”
+   * For above and beyond, I added an audio clip and a short animation to my app to make it more intriguing. I also spent a lot of time on the UI/the look and feel of the app. I wanted it to look relaxing. I also used a lot of icons from google to make it look more minimalistic. I also looked up a lot of examples and learned a lot of new concepts while doing so (on fragment communication, countdowntimer, clear vs remove, and etc.).
+
+
+
+
+
+
+
+
+
+
+Sources
+Star: https://www.google.com/url?sa=i&url=https%3A%2F%2Fsimilarpng.com%2Fpink-star-on-transparent-background-png%2F&psig=AOvVaw3BTmH7zZeSspumEsdS6TC1&ust=1620772652731000&source=images&cd=vfe&ved=0CAIQjRxqGAoTCMitrOyWwPACFQAAAAAdAAAAABDFAQ
+
+
+Brain icon: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ffree-vector%2Fbrain-cartoon-icon-illustration-education-object-icon-concept_12006503.htm&psig=AOvVaw3fbKJNKEDOGdWQzUAlJoec&ust=1620772523810000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPj6tbKXwPACFQAAAAAdAAAAABAD
+
+
+Other icons from: https://fonts.google.com/icons
+
+
+
+
+Helpful links:
+* CodeWithMazn: https://www.youtube.com/watch?v=rpzu 8UQ
+* Sandip Bhattacharya: https://www.youtube.com/watch?v=GZqEI7zPRBU
