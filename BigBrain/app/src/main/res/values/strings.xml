@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BigBrain</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_settings">Settings</string>
+    <string name="save">Save</string>
+    <string name="erase">Erase</string>
+    <string name="cancel">Cancel</string>
+    <string name="OK">OK</string>
+    <string name="missingTitle">Missing Information</string>
+    <string name="missingMessage">Please enter a term and definition.</string>
+    <string name="confirmTitle">Do you want to erase this term?</string>
+    <string name="confirmMessage">This will delete the term permanently.</string>
+    <string name="create">Create +</string>
+    <string name="defaultTime">30:00</string>
+    <string name="termHint">term...</string>
+    <string name="definitionHint">definition...</string>
+    <string name="description">Set a timer before starting. Get to studying!</string>
+    <string name="welcome">Welcome to Big Brain</string>
+</resources>
